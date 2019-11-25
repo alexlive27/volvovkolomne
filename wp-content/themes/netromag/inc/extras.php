@@ -22,7 +22,7 @@ function netromag_slider() {
 
 	if ( ( is_home() || is_front_page() ) && $show_netromag_slider == true ) {
 
-		echo '<div class="mz-slider">';
+		echo '<div class="col-md-9 mz-slider">';
 
 		$count = 4;
 		$slidecat = get_theme_mod( 'netromag_slider_cat' );
