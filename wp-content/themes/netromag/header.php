@@ -36,8 +36,10 @@
 
 		<div class="container">
 			<header class="header" id="header">
-				<div class="container">
-					<?php netromag_the_custom_logo(); ?>
+				<div class="container netro_header">
+					<div class="col-md-4 netro_logo_custom"><?php netromag_the_custom_logo(); ?></div>
+					<div class="col-md-4 netro_adress">г. Коломна ул. Леваневского 36</div>
+					<div class="col-md-4 hetro_tel"><a href="tel:79854200340">+7 (985) 420-03-40</a></div>
 				</div>
 			</header>
 		</div>
