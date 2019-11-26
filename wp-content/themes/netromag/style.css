@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active.boxed {
-	max-width: 100%;/*1240px*/
+	max-width: 1170px;/*1240px*/
 	margin: 0px auto;
 	background: #fff;
 	padding: 0px;
