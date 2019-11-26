@@ -2126,8 +2126,96 @@ object {
 /*блок телефон*/
 /*блок телефон иконка*/
 
-/*!шапка флех*/
 /*адаптив шапка флех*/
-/*адаптив заголовок меньше+телефон меньше*/
-/*адаптив название+описание+телефон по центру*/
-/*адаптив мобилка заголовок меньше*/
+/*шрифт меню*/
+
+
+/*
+
+.navbar .navbar-nav > li > a{
+	font-family: impact;
+	font-weight: inherit;
+	font-size: 25px;
+	letter-spacing: inherit;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav{
+		float: inherit;
+		margin: auto;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.header{
+	text-align: left;
+}
+
+
+.header h1{
+	font-size: 3em;
+}
+
+
+.netro_adress{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.netro_adress p{
+	font-size: 2em;
+	text-align: center;
+}
+
+
+.netro_tel{
+	font-size: 2em;
+	display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.netro_tel i {
+	font-weight: bold;
+  color: #20b038;
+}
+
+@media (min-width: 768px){
+	.netro_header{
+		display: flex;
+	}
+}
+
+@media (max-width: 992px) {
+	.header h1{
+			font-size: 2.5em;
+	}
+	.netro_tel{
+		font-size: 1.5em;
+	}
+
+}
+@media (max-width: 768px){
+	.header h1, .description{
+		text-align: center;
+	}
+	.netro_tel{
+  	justify-content: center;
+	}
+
+}
+
+@media (max-width: 400px){
+	.header h1{
+		font-size: 2em
+	}
+}
+
+
+ */
