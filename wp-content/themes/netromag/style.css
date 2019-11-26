@@ -120,7 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 .active.boxed {
 	max-width: 1170px;/*1240px*/
 	margin: 0px auto;
-	background: #fff;
 	padding: 0px;
 	min-height: 100%;
 	-webkit-box-shadow: 0px 0px 24px -8px rgba(97,97,97,1);
@@ -2132,6 +2131,14 @@ object {
 
 /*
 
+#wid_abs{
+	width: 100%;
+	box-shadow: none;
+}
+
+/*шрифт меню*/
+/* 
+
 .navbar .navbar-nav > li > a{
 	font-family: impact;
 	font-weight: inherit;
@@ -2139,6 +2146,7 @@ object {
 	letter-spacing: inherit;
 }
 
+меню по центру+флекс-блоки
 @media (min-width: 768px) {
 	.navbar-nav{
 		float: inherit;
@@ -2150,40 +2158,51 @@ object {
 	}
 }
 
+название слева
 .header{
 	text-align: left;
+	background: rgba(255, 255, 255, 0.7);
 }
 
-
+размер шрифта названия
 .header h1{
 	font-size: 3em;
 }
 
-
+блок адрес
 .netro_adress{
 	display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
+блок адрес параграф
 .netro_adress p{
 	font-size: 2em;
 	text-align: center;
 }
 
-
+блок телефон
 .netro_tel{
+	padding-right: 1.5em;
 	font-size: 2em;
 	display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-
+блок телефон иконка
 .netro_tel i {
 	font-weight: bold;
   color: #20b038;
+}
+
+.navbar{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.my_container{
+	background: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: 768px){
@@ -2216,6 +2235,7 @@ object {
 		font-size: 2em
 	}
 }
+ */
 
 
  */
