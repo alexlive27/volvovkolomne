@@ -15,7 +15,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-	<div class="boxed active" id="wid_abs">
+	<div class="boxed active"  id="wid_abs">
 
 		<!-- Top Navigation -->
 		<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
