@@ -34,7 +34,7 @@
 		<?php endif; ?>
 		<!-- End: Navigation -->
 
-		<div class="container">
+		<div class="container my_container">
 			<header class="header" id="header">
 				<div class="container netro_header">
 					<div class="col-md-4 netro_logo_custom"><?php netromag_the_custom_logo(); ?></div>
@@ -45,7 +45,7 @@
 		</div>
 
 		<!-- Navigation -->
-		<div class="container">
+		<div class="container my_container">
 			<nav class="navbar" role="navigation">
 				<!-- Brand and toggle get grouped for better mobile display --> 
 				<div class="navbar-header"> 
