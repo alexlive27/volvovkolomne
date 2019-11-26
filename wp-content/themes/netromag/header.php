@@ -83,7 +83,7 @@
 				?>
 
 			<!-- BEGIN .container -->
-			<div class="container <?php echo esc_attr($layout_class); ?>" <?php if(is_home() || is_front_page() == true){ echo "style='display: none'"; } ?>>
+			<div class="container <?php echo esc_attr($layout_class); ?> my_container" ?>>
 
 			<div id="content">
 				<div class="row">
