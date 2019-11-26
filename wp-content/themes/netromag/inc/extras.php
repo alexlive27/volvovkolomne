@@ -55,6 +55,7 @@ function netromag_slider() {
 
 		echo '</div>';
 
+		//сайдбар перемещен
 		$netromag_sidebar_position = get_theme_mod( 'netromag_sidebar_position' );
 		$netromag_sidebar_position = isset($netromag_sidebar_position) ? $netromag_sidebar_position : '';
 
