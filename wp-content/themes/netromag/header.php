@@ -44,7 +44,7 @@
 					</div>
 					<div class="col-md-3 col-xs-6 netro_tel">
 						<a href="tel:79854200340"><i class="fa fa-phone bold" aria-hidden="true"></i> +7 (985) 420-03-40</a>
-						<a href="tel:79854200340"><i class="fa fa-phone bold" aria-hidden="true"></i> +7 (915) 470-73-55</a>
+						<a href="tel:79154707355"><i class="fa fa-phone bold" aria-hidden="true"></i> +7 (915) 470-73-55</a>
 					</div>
 				</div>
 			</header>
