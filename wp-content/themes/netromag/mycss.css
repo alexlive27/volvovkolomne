@@ -1,0 +1,202 @@
+body{
+	background: #000;
+}
+
+#wid_abs{
+	width: 100%;
+	box-shadow: none;
+}
+
+/*шрифт меню*/
+.navbar .navbar-nav > li > a{
+	font-family: impact;
+	font-weight: inherit;
+	font-size: 25px;
+	letter-spacing: inherit;
+}
+
+/*меню по центру+флекс-блоки*/
+@media (min-width: 768px) {
+	.navbar-nav{
+		float: inherit;
+		margin: auto;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/*название слева*/
+.header{
+	text-align: left;
+	color: #fff;
+}
+
+.header h1{
+	font-size:2.5em;
+	height: 35px;
+	
+}
+
+/*размер шрифта названия*/
+.header a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* название шапке */
+.netro_logo_custom{
+	  padding: 0;
+    margin-left: -30px;
+}
+
+.description{
+		text-align: right;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-right: 1.6em;
+    color: #06808B;
+}
+
+/*блок адрес*/
+.netro_adress{
+	padding: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2em;
+	font-size: 1em;
+}
+
+/*блок адрес параграф*/
+.netro_adress p{
+	padding: 0;
+	position: relative;
+	display: block;
+	right: -2em;
+    /* text-align: center; */
+    COLOR: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*блок телефон*/
+.netro_tel{
+	padding: 0;
+		font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+		align-items: flex-end;
+		right: -25px;
+}
+
+/* блок с телефоном */
+.netro_tel a{
+		color: #fff;
+  	font-weight: bold;
+}
+
+/*блок телефон иконка*/
+.netro_tel i {
+	font-weight: bold;
+  color: #20b038;
+}
+
+/* менюшка */
+.navbar{
+	background-color: rgb(202, 202, 202);
+   margin: 0 -15px;
+}
+
+/* отдельный класс для контейнеров */
+.my_container{
+	background: #fff;	
+}
+
+
+@media (max-width: 1200px){
+	.header h1{
+		font-size:2em;
+		height: 30px;
+	}
+		.description {
+    margin-right: 1.8em;
+	}
+}
+
+/* адаптив блоки в шапке флех */
+@media (min-width: 768px){
+	.netro_header{
+		display: flex;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.netro_logo_custom{
+		margin-left: -30px;
+    margin-right: -4em;
+	}
+	.header h1{
+			font-size: 1.7em;
+		height: 60px;
+	}
+	.description {
+    text-align: left;
+	}
+	.netro_adress{
+		width: 45%;
+	}
+	.netro_adress p{
+		right: -1em;
+	}
+	.netro_tel{
+		font-size: 1.3em;
+   	width: 30%;
+		right: 0;
+	}
+
+}
+@media (max-width: 768px){
+	.header h1, .description{
+		font-size: 3em;
+		text-align: center;
+		margin: 0;
+	}
+	.netro_adress{
+		margin-top:0;
+	}
+	.netro_tel{
+  	justify-content: center;
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 768px){
+	.header h1{height:55px;}
+}
+
+@media (max-width: 768px){
+	.header h1{height:100px;}
+}
+
+@media (max-width: 480px){
+	.netro_adress, .netro_tel{
+		width: 100%;
+		text-align: center;
+	}
+	.netro_tel a{
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px){
+	.header h1{
+		font-size: 3em
+	}
+}
