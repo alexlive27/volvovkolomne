@@ -37,8 +37,8 @@
 		<div class="container">
 			<header class="header" id="header">
 				<div class="container netro_header">
-					<div class="col-md-3 netro_logo_custom"><?php netromag_the_custom_logo(); ?></div>
-					<div class="col-md-5 netro_adress">
+					<div class="col-md-8 netro_logo_custom"><?php netromag_the_custom_logo(); ?></div>
+					<div class="col-md-5 netro_adress hidden">
 						<p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Коломна ул. Леваневского 36</p>
 						<p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Коломна ул. Добролюбова 17А</p>
 					</div>
