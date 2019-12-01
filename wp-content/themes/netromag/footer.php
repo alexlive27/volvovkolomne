@@ -15,6 +15,7 @@
 
 		<footer class="mz-footer" id="footer">
 
+		
 			<!-- footer widgets -->
 			<div class="container footer-inner netro_viget">
 				<div class="row row-gutter">
