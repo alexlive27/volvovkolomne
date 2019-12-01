@@ -34,9 +34,9 @@
 		<?php endif; ?>
 		<!-- End: Navigation -->
 
-		<div class="container">
+		<div class="container padding_none">
 			<header class="header" id="header">
-				<div class="container netro_header">
+				<div class="container netro_header padding_none">
 					<div class="col-md-6 netro_logo_custom"><?php netromag_the_custom_logo(); ?></div>
 					<div class="col-md-3 col-xs-6 netro_adress">
 						<p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Коломна ул. Леваневского 36</p>
