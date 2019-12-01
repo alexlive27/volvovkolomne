@@ -67,7 +67,7 @@
 		</div>
 		<!-- End: Navigation -->
 
-		<div class="container my_container">
+		<div class="container my_container netro_slide-viget">
 			<?php netromag_slider(); ?>
 		</div>
 
