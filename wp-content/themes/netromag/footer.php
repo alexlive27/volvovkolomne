@@ -17,7 +17,7 @@
 
 		
 			<!-- footer widgets -->
-			<div class="container footer-inner netro_viget">
+			<div class="container footer-inner netro_footer_viget">
 				<div class="row row-gutter">
 					<?php get_sidebar( 'footer' ); ?>
 				</div>

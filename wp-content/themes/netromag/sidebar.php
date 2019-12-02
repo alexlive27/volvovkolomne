@@ -25,7 +25,7 @@
 		<?php if( $show_sidebar ): ?>
 
 				<div class="col-md-3 wow">
-					<div id="sidebar" class="sidebar">
+					<div id="sidebar" class="sidebar netro_main_sidebar">
 
 						<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 							<!-- sidebar-widget -->
