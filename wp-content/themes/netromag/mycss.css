@@ -1,10 +1,25 @@
 body{
-	background: #000;
+	background-image: url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/bg-1.png), url(http://www.volvovkolomne.ru/wp-content/uploads/2019/11/close-up-photography-of-vehicle-wheel-and-hankook-tire-1236788-scaled.jpg
+);
+	background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: auto, cover;
+}
+
+.padding_none{
+	padding: 0;
 }
 
 #wid_abs{
 	width: 100%;
 	box-shadow: none;
+	overflow: hidden;
+}
+
+#header{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }
 
 /*шрифт меню*/
@@ -35,7 +50,6 @@ body{
 
 .header h1{
 	font-size:2.5em;
-	height: 35px;
 	
 }
 
@@ -49,14 +63,14 @@ body{
 /* название шапке */
 .netro_logo_custom{
 	  padding: 0;
-    margin-left: -30px;
+/*     margin-left: -30px; */
 }
 
 .description{
 		text-align: right;
     font-size: 2em;
     text-transform: uppercase;
-    margin-right: 1.6em;
+    margin-right: 60px;
     color: #06808B;
 }
 
@@ -91,7 +105,7 @@ body{
     justify-content: center;
     flex-direction: column;
 		align-items: flex-end;
-		right: -25px;
+/* 		right: -25px; */
 }
 
 /* блок с телефоном */
@@ -117,8 +131,49 @@ body{
 	background: #fff;	
 }
 
+.netro_slide-viget{
+	padding-top: 25px;
+	
+}
 
-/*****новый даптив****/
+#content{
+	margin-top: 0;
+	padding-left: 15px;
+}
+
+.home .post-entry p{
+	font-size: 1.5em;
+}
+
+
+/* виджеты */
+
+@media (max-width: 992px){
+	.netro_slide-viget .sidebar{
+		display: none;
+	}
+	.netro_footer_viget{
+		display: block;
+	}
+}
+
+@media (min-width: 992px){
+	#sidebar{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.netro_footer_viget{
+		display: none;
+	}
+}
+
+
+
+/* в подвале */
+
+
+
 
 @media (max-width: 768px){
 	.netro_header{
@@ -183,134 +238,59 @@ body{
 	}
 }
 
+/* адаптация меню */
 
-
-
-
-/************************************/
-/* АДАПТИВ */
-
-
-
-@media (max-width: 1200px){
-	.header h1{
-		font-size:2em;
-		height: 30px;
-	}
-		.description {
-    margin-right: 1.8em;
-	}
+nav.navbar.navbar-top.netro_navbar-top{
+	left:15px;
+	background: none;
+}
+.navbar-toggle{
+	float: left;
+	text-align: center;
+	position: relative;
+	z-index: 10;
 }
 
-/* адаптив блоки в шапке флех */
-@media (min-width: 768px){
-	.netro_header{
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
-
-
-
-
-@media (max-width: 992px) {
-	.netro_logo_custom{
-/* 		margin-left: -30px; */
-    margin-right: -4em;
-	}
-	.header h1{
-			font-size: 1.7em;
-	}
-	.description {
-    text-align: left;
-	}
-	.netro_adress{
-		width: 60%;
-		text-align: right;
-		padding-right: 15px;
-	}
-	.netro_adress p{
-		right: -1em;
-	}
-	.netro_tel{
-		font-size: 1.3em;
-   	width: 100%;
-		right: 0;
-		margin: auto;
-    flex-direction: inherit;
-		justify-content: space-between;
-	}
+.netro_navbar-top .navbar-collapse{
+	background: #cacaca;
+	padding-left: 1em;
+	padding-top: 3em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 9;
 	
-	.wow{
-		display: none;
-	}
-	.netro_viget{
+}
+
+.navbar.netro_navbar-top .navbar-nav > li > a{
+	font-family: inherit;
+    color: #000;
+}
+
+.navbar.netro_navbar-top .navbar-nav > li > a:hover{
+	font-family: inherit;
+    color: #fff;
+}
+
+/* прячем главное, показываем  верхнее*/
+@media (max-width: 768px){
+	.navbar-top{
 		display: block;
 	}
-
-}
-@media (max-width: 768px){
-	.header h1, .description{
-		padding-right: 1.5em;
-		font-size: 3em;
-		text-align: center;
-		margin: 0;
-	}
-	.netro_adress{
-		margin-top:0;
-		width: 100%;
-    text-align: center;
-	}
-	.netro_tel{
-  	justify-content: center;
-		width: 100%;
-	}
-	.netro_tel a{
-		padding: 0 10px;
-	}
-
-}
-
-@media (max-width: 768px){
-	.header h1{
-		height:100px;
-	}
-		body{
-		 background-image: url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/bg-1.png), url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/close-up-photography-of-vehicle-wheel-and-hankook-tire-1236788-scaled.jpg
-);
-	background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-size: auto, 100%;
-	}
-}
-
-
-
-@media (max-width: 480px){
 	
-/* 	.header{
-		height: 100vh;
-	} */
-	
-	.netro_logo_custom{
-		width: 100%;
-		padding: 0 1px;
-	}
-	.netro_adress, .netro_tel{
-		width: 100%;
-		text-align: center;
-	}
-	.netro_tel a{
-		width: 100%;
+	.netro_navbar{
+		display: none;
 	}
 }
 
-@media (max-width: 400px){
-	.header h1, .description{
-		padding-right: 0;
+/* прячем верхнее, показываем главное */
+@media (min-width: 768px){
+	.navbar-top{
+		display: none;
 	}
-	.header h1{
-		font-size: 3em;
-		height: auto;
+	
+	.netro_navbar{
+		display: block;
 	}
 }
