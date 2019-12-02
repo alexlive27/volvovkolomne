@@ -19,6 +19,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php echo bloginfo( 'pingback_url' ); ?>">
 
+			<!-- виджет из вк -->
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
 	<?php wp_head(); ?>
 
 </head>
@@ -34,9 +37,9 @@
 <?php if ( has_nav_menu( 'fixed-menu' ) ) { ?>
 
 <!-- BEGIN #navigation -->
-<nav id="navigation" class="navigation-main fixed-nav clearfix" role="navigation">
+<nav id="navigation" class="navigation-main swell-navigation-top fixed-nav clearfix" role="navigation">
 
-	<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+	<button class="menu-toggle swell-menu-toggle"><i class="fa fa-bars"></i></button>
 
 	<?php
 		wp_nav_menu( array(
@@ -83,7 +86,7 @@
 <?php if ( has_nav_menu( 'main-menu' ) ) { ?>
 
 <!-- BEGIN #navigation -->
-<nav id="navigation" class="navigation-main clearfix" role="navigation">
+<nav id="navigation" class="navigation-main swell-navigation-main clearfix" role="navigation">
 
 	<?php if ( ! has_nav_menu( 'fixed-menu' ) ) { ?>
 		<button class="menu-toggle"><i class="fa fa-bars"></i></button>
