@@ -56,7 +56,7 @@
 
 		<!-- Navigation -->
 		<div class="container ">
-			<nav class="navbar" role="navigation">
+			<nav class="navbar netro_navbar" role="navigation">
 				<!-- Brand and toggle get grouped for better mobile display --> 
 				<div class="navbar-header"> 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse"> 

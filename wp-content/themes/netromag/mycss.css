@@ -118,6 +118,80 @@ body{
 }
 
 
+/*****новый даптив****/
+
+@media (max-width: 768px){
+	.netro_header{
+		text-align: center;
+	}
+	.header h1, .description{
+		text-align: center;
+	}
+	.description{
+		margin: auto;
+	}
+	.netro_adress{
+		width: 100%;
+	}
+	.netro_adress p{
+		right: 0;
+	}
+	.netro_tel{
+		width: 100%;
+		align-items: inherit;
+	}
+}
+
+@media (min-width: 768px), (max-width: 992px){
+	hgroup{
+		width: 78%;
+	}
+	.netro_adress{
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 768px), (min-width: 992px){
+	hgroup{
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px){
+	.header h1{
+		font-size: 2em;
+	}
+	.description{
+		margin-right: 2.3em;
+	}
+	.netro_adress{
+		margin-top: 2em;
+	}
+	.netro_adress p{
+		right: 1em;
+		font-size: 1em;
+	}
+	.netro_tel{
+		margin-top: 1em;
+	}
+	.netro_tel a{}
+}
+
+@media (min-width: 1200px){
+		hgroup{
+		width: 83%;
+	}
+}
+
+
+
+
+
+/************************************/
+/* АДАПТИВ */
+
+
+
 @media (max-width: 1200px){
 	.header h1{
 		font-size:2em;
@@ -132,60 +206,96 @@ body{
 @media (min-width: 768px){
 	.netro_header{
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
 
+
+
 @media (max-width: 992px) {
 	.netro_logo_custom{
-		margin-left: -30px;
+/* 		margin-left: -30px; */
     margin-right: -4em;
 	}
 	.header h1{
 			font-size: 1.7em;
-		height: 60px;
 	}
 	.description {
     text-align: left;
 	}
 	.netro_adress{
-		width: 45%;
+		width: 60%;
+		text-align: right;
+		padding-right: 15px;
 	}
 	.netro_adress p{
 		right: -1em;
 	}
 	.netro_tel{
 		font-size: 1.3em;
-   	width: 30%;
+   	width: 100%;
 		right: 0;
+		margin: auto;
+    flex-direction: inherit;
+		justify-content: space-between;
+	}
+	
+	.wow{
+		display: none;
+	}
+	.netro_viget{
+		display: block;
 	}
 
 }
 @media (max-width: 768px){
 	.header h1, .description{
+		padding-right: 1.5em;
 		font-size: 3em;
 		text-align: center;
 		margin: 0;
 	}
 	.netro_adress{
 		margin-top:0;
+		width: 100%;
+    text-align: center;
 	}
 	.netro_tel{
   	justify-content: center;
-		width: 50%;
+		width: 100%;
+	}
+	.netro_tel a{
+		padding: 0 10px;
 	}
 
 }
 
 @media (max-width: 768px){
-	.header h1{height:55px;}
+	.header h1{
+		height:100px;
+	}
+		body{
+		 background-image: url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/bg-1.png), url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/close-up-photography-of-vehicle-wheel-and-hankook-tire-1236788-scaled.jpg
+);
+	background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: auto, 100%;
+	}
 }
 
-@media (max-width: 768px){
-	.header h1{height:100px;}
-}
+
 
 @media (max-width: 480px){
+	
+/* 	.header{
+		height: 100vh;
+	} */
+	
+	.netro_logo_custom{
+		width: 100%;
+		padding: 0 1px;
+	}
 	.netro_adress, .netro_tel{
 		width: 100%;
 		text-align: center;
@@ -196,7 +306,11 @@ body{
 }
 
 @media (max-width: 400px){
+	.header h1, .description{
+		padding-right: 0;
+	}
 	.header h1{
-		font-size: 3em
+		font-size: 3em;
+		height: auto;
 	}
 }
