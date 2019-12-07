@@ -15,7 +15,8 @@ get_header(); ?>
 
 	<?php if ( has_post_thumbnail() && has_nav_menu( 'main-menu' ) ) { ?>
 		<div class="feature-img page-banner" <?php if ( ! empty( $thumb ) ) { ?> style="background-image: url(<?php echo $thumb[0]; ?>);" <?php } ?>>
-			<h1 class="headline img-headline"><?php the_title(); ?></h1>
+			<div class="swell-black"></div>
+			<h1 class="headline wooow img-headline"><?php the_title(); ?></h1>
 			<?php the_post_thumbnail( 'swell-featured-large' ); ?>
 		</div>
 	<?php } ?>

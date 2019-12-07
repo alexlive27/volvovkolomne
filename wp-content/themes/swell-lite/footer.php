@@ -92,5 +92,12 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+	$(".swell-btn-feedback").click(function(){
+		$("#feedback").removeClass("hidden");
+	});
+</script>
 </body>
 </html>

@@ -19,8 +19,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php echo bloginfo( 'pingback_url' ); ?>">
 
-			<!-- виджет из вк -->
-		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+	<!-- виджет из вк -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
 	<?php wp_head(); ?>
 
@@ -28,82 +28,104 @@
 
 <body <?php body_class(); ?>>
 
-<!-- BEGIN #wrapper -->
-<div id="wrapper">
+	<!-- BEGIN #wrapper -->
+	<div id="wrapper">
 
-<!-- BEGIN .container -->
-<div class="container">
+		<!-- BEGIN .container -->
+		<div class="container">
 
-<?php if ( has_nav_menu( 'fixed-menu' ) ) { ?>
+			<?php if ( has_nav_menu( 'fixed-menu' ) ) { ?>
 
-<!-- BEGIN #navigation -->
-<nav id="navigation" class="navigation-main swell-navigation-top fixed-nav clearfix" role="navigation">
+				<!-- BEGIN #navigation -->
+				<nav id="navigation" class="navigation-main swell-navigation-top fixed-nav clearfix" role="navigation">
 
-	<button class="menu-toggle swell-menu-toggle"><i class="fa fa-bars"></i></button>
+					<button class="menu-toggle swell-menu-toggle"><i class="fa fa-bars"></i></button>
 
-	<?php
-		wp_nav_menu( array(
-			'theme_location' 		=> 'fixed-menu',
-			'title_li' 					=> '',
-			'depth' 						=> 4,
-			'container_class' 	=> '',
-			'menu_class'      	=> 'menu',
-			)
-		);
-	?>
+					<?php
+					wp_nav_menu( array(
+						'theme_location' 		=> 'fixed-menu',
+						'title_li' 					=> '',
+						'depth' 						=> 4,
+						'container_class' 	=> '',
+						'menu_class'      	=> 'menu',
+					)
+				);
+				?>
 
-<!-- END #navigation -->
-</nav>
+				<!-- END #navigation -->
+			</nav>
 
-<?php } ?>
+		<?php } ?>
 
-<!-- BEGIN #header -->
-<div id="header">
+		<!-- BEGIN #header -->
+		<div id="header">
 
-	<?php $header_image = get_header_image(); if ( ! empty( $header_image ) ) { ?>
+			<?php $header_image = get_header_image(); if ( ! empty( $header_image ) ) { ?>
 
-		<div id="custom-header" style="background-image: url(<?php header_image(); ?>);">
+				<div id="custom-header" style="background-image: url(<?php header_image(); ?>);">
 
-			<?php get_template_part( 'content/logo', 'title' ); ?>
+					<?php get_template_part( 'content/logo', 'title' ); ?>
 
-			<img class="hide-img" src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php echo esc_attr( get_bloginfo() ); ?>" />
+					<img class="hide-img" src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php echo esc_attr( get_bloginfo() ); ?>" />
 
+				</div>
+
+			<?php } else { ?>
+
+				<div id="custom-header" class="non-active">
+
+					<div class="title-desc">
+						<?php get_template_part( 'content/logo', 'title' ); ?>
+					</div>
+					
+					<!-- begin popup -->
+
+					<div class="feedback">
+						<button type="button" class="swell-btn-feedback" class="hidden">
+							Позвоните нам
+						</button>
+						<div id="feedback" class="hidden">
+							<div class="feedback-form">
+								<p class="feedback-t-name">Ваше имя</p>
+								<input type="text" class="name" placeholder="Имя">
+								<p class="feedback-t-tel">Ваш телефон</p>
+								<input type="tel" class="tel" placeholder="телефон">
+
+							</div>
+						</div>
+
+						<!-- end popup -->
+					</div>
+					
+
+				</div>
+
+			<?php } ?>
+
+			<!-- END #header -->
 		</div>
 
-	<?php } else { ?>
+		<?php if ( has_nav_menu( 'main-menu' ) ) { ?>
 
-		<div id="custom-header" class="non-active">
+			<!-- BEGIN #navigation -->
+			<nav id="navigation" class="navigation-main swell-navigation-main clearfix" role="navigation">
 
-			<?php get_template_part( 'content/logo', 'title' ); ?>
+				<?php if ( ! has_nav_menu( 'fixed-menu' ) ) { ?>
+					<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+				<?php } ?>
 
-		</div>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' 		=> 'main-menu',
+					'title_li' 					=> '',
+					'depth' 						=> 4,
+					'container_class' 	=> '',
+					'menu_class'      	=> 'menu',
+				)
+			);
+			?>
+
+			<!-- END #navigation -->
+		</nav>
 
 	<?php } ?>
-
-<!-- END #header -->
-</div>
-
-<?php if ( has_nav_menu( 'main-menu' ) ) { ?>
-
-<!-- BEGIN #navigation -->
-<nav id="navigation" class="navigation-main swell-navigation-main clearfix" role="navigation">
-
-	<?php if ( ! has_nav_menu( 'fixed-menu' ) ) { ?>
-		<button class="menu-toggle"><i class="fa fa-bars"></i></button>
-	<?php } ?>
-
-	<?php
-		wp_nav_menu( array(
-			'theme_location' 		=> 'main-menu',
-			'title_li' 					=> '',
-			'depth' 						=> 4,
-			'container_class' 	=> '',
-			'menu_class'      	=> 'menu',
-			)
-		);
-	?>
-
-<!-- END #navigation -->
-</nav>
-
-<?php } ?>

@@ -1,0 +1,75 @@
+body{
+	background: #131212;
+}
+
+#custom-header{
+	background-image: url(http://www.volvovkolomne.ru/wp-content/uploads/2019/12/bg-1.png), url(http://www.volvovkolomne.ru/wp-content/uploads/2019/11/close-up-photography-of-vehicle-wheel-and-hankook-tire-1236788-scaled.jpg
+);
+	background-repeat: repeat, no-repeat;
+    background-attachment: fixed, inherit;
+    background-size: auto, cover;
+	background-position: inherit, 0 0;
+}
+
+.admin-bar.swell-fixed-menu #custom-header{
+	background-position: center 0px;
+}
+
+#masthead .site-description{
+/* 	color:#06808B; */
+	color: #fff;
+}
+
+#navigation.swell-navigation-top{
+	background: #dadada
+}
+.article{
+	background: #f9f9f9;
+}
+
+#navigation.swell-navigation-top{
+	display:none;
+}
+
+.swell-menu-item{
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+
+.footer-widgets{
+	display:flex;
+	justify-content:center;
+}
+
+@media (max-width: 768px){
+	#navigation.swell-navigation-top{
+		display: flex;
+  	flex-direction: column;
+	}
+	.swell-menu-toggle{
+		align-self: flex-end;
+	}
+}
+
+#navigation.swell-navigation-main{background: #dadada;}
+.swell-navigation-main a{
+		color: #131212;
+		font-family: impact;
+    font-weight: inherit;
+    font-size: 25px;
+    letter-spacing: inherit;
+}
+.swell-navigation-main li:hover{
+	background: #4a4a4a;
+}
+.swell-navigation-main li:hover a{
+	color: #dadada;
+}
+
+
+
+.swell-menu-item span{
+	display: inline;
+}
+
