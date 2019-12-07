@@ -19,7 +19,7 @@
 
 <?php } else { ?>
 
-	<div id="masthead" >
+	<div id="masthead" class="col-md-6">
 
 		<h1 class="site-title">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo wp_kses_post( get_bloginfo( 'name' ) ); ?></a>

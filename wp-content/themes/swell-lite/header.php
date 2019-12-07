@@ -80,18 +80,11 @@
 					
 					<!-- begin popup -->
 
-					<div class="feedback">
+					<div class="feedback col-md-6">
+						<p class="tel"><a href="tel:89854200340" class="tel_link">+7 (985) 420-03-40</a></p>
 						<button type="button" class="swell-btn-feedback" class="hidden">
 							Позвоните нам
 						</button>
-						<div id="feedback" class="hidden">
-							<div class="feedback-form">
-								<p class="feedback-t-name">Ваше имя</p>
-								<input type="text" class="name" placeholder="Имя">
-								<p class="feedback-t-tel">Ваш телефон</p>
-								<input type="tel" class="tel" placeholder="телефон">
-
-							</div>
 						</div>
 
 						<!-- end popup -->
