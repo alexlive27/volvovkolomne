@@ -8,18 +8,18 @@
 
 get_header(); ?>
 
-<!-- BEGIN .post class -->
+<!-- BEGIN .post class-->
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<!-- BEGIN .row -->
+	<!-- BEGIN .row hello_category-->
 	<div class="row">
 
-		<!-- BEGIN .content -->
+		<!-- BEGIN .content full_row_content-->
 		<div class="content">
 
 		<?php if ( is_active_sidebar( 'blog-sidebar' ) ) { ?>
 
-			<!-- BEGIN .eleven columns -->
+			<!-- BEGIN .eleven columns full_row_content_column-->
 			<div class="eleven columns">
 
 				<!-- BEGIN .postarea -->
@@ -43,11 +43,11 @@ get_header(); ?>
 
 		<?php } else { ?>
 
-			<!-- BEGIN .sixteen columns -->
+			<!-- BEGIN .sixteen columns hello_category2-->
 			<div class="sixteen columns">
 
 				<!-- BEGIN .postarea full -->
-				<div class="postarea full">
+				<div class="postarea full swell-list">
 
 					<?php get_template_part( 'content/loop', 'archive' ); ?>
 

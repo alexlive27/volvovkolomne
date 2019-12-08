@@ -32,7 +32,7 @@ get_header(); ?>
 			<div class="sixteen columns">
 
 				<!-- BEGIN .postarea full -->
-				<div class="postarea full">
+				<div class="postarea full wooow">
 
 					<?php get_template_part( 'content/loop', 'page' ); ?>
 

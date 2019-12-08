@@ -12,7 +12,7 @@ get_header(); ?>
 <!-- BEGIN .post class -->
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<!-- BEGIN .row -->
+	<!-- BEGIN .row hello_archive!-->
 	<div class="row">
 
 		<!-- BEGIN .content -->

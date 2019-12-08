@@ -31,13 +31,13 @@ get_header(); ?>
 			<!-- BEGIN .sixteen columns -->
 			<div class="sixteen columns">
 
-				<!-- BEGIN .postarea full -->
+				<!-- BEGIN .postarea-->
 				<div class="postarea full">
 
 					<!-- BEGIN .page-holder -->
 					<div class="page-holder shadow radius-full">
 
-						<!-- BEGIN .article -->
+						<!-- BEGIN .article yaaa-->
 						<div class="article clearfix">
 
 							<h1 class="headline"><?php the_title(); ?></h1>

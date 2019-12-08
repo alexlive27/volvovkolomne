@@ -81,10 +81,8 @@
 					<!-- begin popup -->
 
 					<div class="feedback col-md-6">
-						<p class="tel"><a href="tel:89854200340" class="tel_link">+7 (985) 420-03-40</a></p>
-						<button type="button" class="swell-btn-feedback" class="hidden">
-							Позвоните нам
-						</button>
+						<p class="tel"><a href="tel:89854200340" class="tel_link hidden">+7 (985) 420-03-40</a></p>
+						<button type="button" class="swell-btn-feedback" id="feedback">Позвонить</button>
 						</div>
 
 						<!-- end popup -->

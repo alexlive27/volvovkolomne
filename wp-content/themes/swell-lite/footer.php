@@ -89,7 +89,40 @@
 
 <!-- END #wrapper -->
 </div>
-
+<scripts src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	$('#callbackModal .sender').click(function() {
+        var sender = $(this);
+        var form = "#callbackModal";
+        var message = "Телефон: ";
+        var validated = true;
+        var phone = $(form).find('input[type="tel"]').val();
+        var alert = $(form).find('.alert');
+        if (phone == "") {
+            validated = false;
+            $(form).find('input[type="tel"]').parent().addClass('has-error');
+        }
+        if (validated) {
+            $.ajax({
+                type: 'post',
+                url: '/engine/classes/Ajax.php',
+                data: {
+                    action: "callback",
+                    data: message + phone
+                },
+                success: function(response) {
+                    var res = JSON.parse(response);
+                    if (res.result == "ok") {
+                        $(alert).addClass("alert-success").removeClass("hidden").html("Ваша заявка принята!");
+                    } else {
+                        $(alert).addClass("alert-danger").removeClass("hidden").html("Произошла ошибка!");
+                    }
+                },
+                error: function(response) {}
+            });
+        }
+    });
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
