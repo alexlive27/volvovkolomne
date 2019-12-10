@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<!-- imhere -->
 <!-- BEGIN .post class -->
 <div <?php post_class(); ?> id="page-<?php the_ID(); ?>">
 
@@ -48,7 +48,7 @@ get_header(); ?>
 			<div class="sixteen columns">
 
 				<!-- BEGIN .postarea full -->
-				<div id="infinite-container" class="postarea full">
+				<div id="infinite-container" class="postarea full swell-area">
 
 					<?php get_template_part( 'content/loop', 'blog' ); ?>
 

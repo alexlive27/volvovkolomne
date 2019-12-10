@@ -14,10 +14,10 @@ get_header(); ?>
 <div <?php post_class(); ?> id="page-<?php the_ID(); ?>">
 
 	<?php if ( has_post_thumbnail() && has_nav_menu( 'main-menu' ) ) { ?>
-		<div class="feature-img page-banner" <?php if ( ! empty( $thumb ) ) { ?> style="background-image: url(<?php echo $thumb[0]; ?>);" <?php } ?>>
-			<div class="swell-black"></div>
-			<h1 class="headline wooow img-headline"><?php the_title(); ?></h1>
-			<?php the_post_thumbnail( 'swell-featured-large' ); ?>
+		<div class="content" <?php /*if ( ! empty( $thumb ) ) { ?> style="background-image: url(<?php echo $thumb[0]; ?>);" <?php }*/ ?>>
+			<!-- <div class="swell-black"></div> -->
+			<h1 class="headline img-headline"><?php the_title(); ?></h1>
+			<?php //the_post_thumbnail( 'swell-featured-large' ); ?>
 		</div>
 	<?php } ?>
 
@@ -25,7 +25,7 @@ get_header(); ?>
 	<div class="row">
 
 		<!-- BEGIN .content -->
-		<div class="content">
+		<div class="content overlap">
 
 		<?php if ( is_active_sidebar( 'default-sidebar' ) ) { ?>
 

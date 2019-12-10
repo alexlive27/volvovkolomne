@@ -72,51 +72,58 @@
 
 			<?php } else { ?>
 
-				<div id="custom-header" class="non-active">
+				<!-- <div id="custom-header" class="non-active"> -->
+				<div id="custom-header-blue" class="non-active">
+							<div class="title-desc">
+								<?php get_template_part( 'content/logo', 'title' ); ?>
+							</div>
+							
+							<!-- begin popup -->
 
-					<div class="title-desc">
-						<?php get_template_part( 'content/logo', 'title' ); ?>
-					</div>
-					
-					<!-- begin popup -->
+							<div class="feedback btn-email hidden col-md-6">
+								<p class="tel"><a href="tel:89854200340" class="tel_link">+7 (985) 420-03-40</a></p>
+								<button type="button" class="swell-btn-feedback link" id="feedback">Заказать звонок</button>
+							</div>
 
-					<div class="feedback col-md-6">
-						<p class="tel"><a href="tel:89854200340" class="tel_link hidden">+7 (985) 420-03-40</a></p>
-						<button type="button" class="swell-btn-feedback" id="feedback">Позвонить</button>
-						</div>
-
-						<!-- end popup -->
-					</div>
-					
-
+<!-- 							<div class="feedback link-just-phone  col-md-6">
+								<a type="button" href="tel:89854200340" class="swell-link-feedback btn" id="feedback">Позвонить</a>
+							</div> -->
+					<!-- end popup -->
 				</div>
 
-			<?php } ?>
 
-			<!-- END #header -->
 		</div>
 
-		<?php if ( has_nav_menu( 'main-menu' ) ) { ?>
-
-			<!-- BEGIN #navigation -->
-			<nav id="navigation" class="navigation-main swell-navigation-main clearfix" role="navigation">
-
-				<?php if ( ! has_nav_menu( 'fixed-menu' ) ) { ?>
-					<button class="menu-toggle"><i class="fa fa-bars"></i></button>
-				<?php } ?>
-
-				<?php
-				wp_nav_menu( array(
-					'theme_location' 		=> 'main-menu',
-					'title_li' 					=> '',
-					'depth' 						=> 4,
-					'container_class' 	=> '',
-					'menu_class'      	=> 'menu',
-				)
-			);
-			?>
-
-			<!-- END #navigation -->
-		</nav>
-
 	<?php } ?>
+
+	<!-- END #header -->
+</div>
+
+<?php if ( has_nav_menu( 'main-menu' ) ) { ?>
+
+	<!-- BEGIN #navigation -->
+	<nav id="navigation" class="navigation-main swell-navigation-main clearfix" role="navigation">
+
+
+		<?php if ( ! has_nav_menu( 'fixed-menu' ) ) { ?>
+			<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+		<?php } ?>
+
+		<?php
+		wp_nav_menu( array(
+			'theme_location' 		=> 'main-menu',
+			'title_li' 					=> '',
+			'depth' 						=> 4,
+			'container_class' 	=> '',
+			'menu_class'      	=> 'menu',
+		)
+	);
+	?>
+
+	<!-- END #navigation -->
+	<div class="feedback-nav link-just-phone  col-md-6">
+		<a type="button" href="tel:89854200340" class="swell-link-feedback btn" id="feedback">Позвонить</a>
+	</div>
+</nav>
+
+<?php } ?>
